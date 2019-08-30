@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns">
       <div class="column">
-        <h1 class="title">Contacto</h1>
+        <h1 class="title center">Contacto</h1>
       </div>
     </div>
     <div class="columns">
@@ -66,4 +66,8 @@ export default {
 };
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.center{
+  text-align: center;
+}
+</style>
