@@ -16,13 +16,11 @@
           <div class="card-content">
             <div class="media">
               <div class="media-content is-center">
-                <button
-                  class="button is-primary"
-                  :href="muestra.href"
-                  target="_newblank"
-                >
-                  {{ muestra.name }}
-                </button>
+                <a :href="muestra.href" target="_newblank">
+                  <button class="button is-primary">
+                    {{ muestra.name }}
+                  </button>
+                </a>
               </div>
             </div>
             <div class="content">
