@@ -3,7 +3,8 @@
     <div class="columns">
       <div class="column center">
         <h1 class="subtitle">
-          <strong>Error 404</strong> - página no encontrada🙇‍♀️ 🙇
+          <strong>Error 404</strong>
+          <vue-typer text=" página no encontrada🙇‍♀️ 🙇"></vue-typer>
         </h1>
       </div>
     </div>
@@ -11,7 +12,11 @@
 </template>
 
 <script>
+import { VueTyper } from "vue-typer";
 export default {
+  components: {
+    VueTyper
+  },
   data() {
     return {
       isShowing: false,
@@ -42,5 +47,9 @@ export default {
 .blur{
   filter: blur(2px);
   opacity: 0.4s;
+}
+
+.vue-typer{
+  font-family: inherit;
 }
 </style>

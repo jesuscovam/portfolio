@@ -10,9 +10,11 @@
               </h1>
 
               <h2 class="subtitle">
-                Esta es una muestra de mis apps
+                <vue-typer
+                  text="Esta es una muestra de mis apps"
+                  :repeat="0"
+                ></vue-typer>
               </h2>
-
               <router-link to="/portfolio">
                 <button class="button is-primary">Portfolio</button>
               </router-link>
@@ -30,12 +32,21 @@
 </template>
 
 <script>
-export default {};
+import { VueTyper } from "vue-typer";
+export default {
+  components: {
+    VueTyper
+  }
+};
 </script>
 
 <style lang="css" scoped>
 .text-center {
   text-align: center;
   margin-top: 50px;
+}
+.vue-typer{
+  font-family: inherit;
+  color: inherit;
 }
 </style>
