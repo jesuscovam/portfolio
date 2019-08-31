@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view />
+    <transition name="comps">
+      <router-view />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -15,4 +17,14 @@ export default {
   }
 };
 </script>
-<style></style>
+<style scoped>
+.comps-enter-active,
+.comps-leave-active {
+  transition: opacity 0.5s;
+}
+
+.comps-enter,
+.comps-leave-to {
+  opacity: 0;
+}
+</style>
